@@ -1,0 +1,236 @@
+body {
+	height: 100%;
+	width: 100%;
+	--font-family-sans-serif: arial, sans-serif;
+	background: url("img/couverture_tintin.png") repeat;
+	background-size: cover;
+}
+
+.container {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 10%;
+	z-index: -1;
+}
+
+.message-box {
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	border: var(--border) solid var(--dark-color);
+	border-width: 4px;
+	height: 100%;
+	font-family: var(--font-family-sans-serif);
+}
+
+.left {
+	background: url("img/tintin_et_milou.png") no-repeat center;
+	background-size: contain;
+	height: 100%;
+}
+
+.right {
+	padding: 25px 40px;
+}
+
+.right h2 {
+	font-family: var(--font-family);
+}
+
+.right p {
+	font-family: var(--font-family-sans-serif);
+}
+
+.message p {
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	margin-bottom: 22px;
+	font-family: var(--font-family-sans-serif);
+	min-height: 150px;
+}
+
+.bottom-left {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	line-height: var(--spacing-x3);
+	padding: 10px;
+
+}
+
+.bottom-left h3 {
+	font-family: var(--font-family);
+}
+
+.bottom-left h4 {
+	font-weight: normal;
+	margin: 0;
+}
+
+h4 {
+	font-family: var(--font-family-talking);
+}
+
+.address {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+}
+
+.phone {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.email {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.bottom-right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	line-height: var(--spacing-x3);
+	padding: 10px;
+}
+
+.bottom-right h3 {
+	font-family: var(--font-family);
+}
+
+.bottom-right a {
+	text-decoration: none;
+	color: var(--dark-color);
+}
+
+.bottom-right h4 {
+	font-family: var(--font-family-talking);
+	font-weight: normal;
+	margin: 0;
+}
+
+
+
+.socialinks:hover {
+	background-color: #e5c39b;
+}
+
+.ecran {
+	width:1300px;
+	height:900px;
+	position:relative;
+	margin:auto;
+}
+.ecran p{
+	text-align: center;
+	font-family: var(--font-family);
+	font-size: xx-large;
+	position: relative;
+	color: red;
+	font-weight: bolder;
+	rotate: 270deg;
+	translate: -50px  150px;
+} 
+
+.image {
+	width:50%;
+	position:absolute;
+	animation: move 6s linear;
+/* 	transform-origin:bottom; */
+	left:42%;
+	top:100%;
+	z-index:0;
+}
+
+@keyframes move {
+	0%{transform:rotate(0deg);top:100%;left:0%}
+	5%{transform:rotate(0deg);top:100%;left:0%}
+	10%{transform:rotate(0deg);top:90%;left:0%}
+	15%{transform:rotate(0deg);top:85%;left:0%}
+	20%{transform:rotate(0deg);top:80%;left:0%}
+	25%{transform:rotate(0deg);top:75%;left:0%}
+	30%{transform:rotate(0deg);top:70%;left:0%}
+	35%{transform:rotate(0deg);top:65%;left:0%}
+	40%{transform:rotate(0deg);top:60%;left:0%}
+	45%{transform:rotate(0deg);top:55%;left:0%}
+	50%{transform:rotate(0deg);top:50%;left:0%}
+	55%{transform:rotate(0deg);top:45%;left:0%}
+	60%{transform:rotate(0deg);top:40%;left:0%}
+	65%{transform:rotate(0deg);top:35%;left:0%}
+	70%{transform:rotate(0deg);top:30%;left:0%}
+	75%{transform:rotate(5deg);}
+	80%{transform:rotate(10deg);}
+	
+	80%{transform:rotate(15deg);}
+	80%{transform:rotate(20deg);}	
+	80%{transform:rotate(30deg);}	
+	80%{transform:rotate(45deg);}	
+	85%{transform:rotate(60deg);}	
+	86%{transform:rotate(80deg);}	
+	87%{transform:rotate(100deg);}	
+	88%{transform:rotate(140deg);}	
+	89%{transform:rotate(180deg);}	
+	90%{transform:rotate(200deg);}	
+	93%{transform:rotate(270deg);}
+	94%{transform:rotate(340deg);}	
+	95%{transform:rotate(45deg);}	
+	97%{transform:rotate(45deg);}
+	98%{transform:rotate(45deg);top:2%;left:75%}	
+	99%{transform:rotate(45deg);top:-10%;left:85%}
+	100%{transform:rotate(45deg);top:-20%;left:110%}
+
+}
+
+@media screen and (max-width: 880px) {
+	.contact-box {
+		grid-template-columns: 1fr;
+	}
+
+	.left {
+		height: 200px;
+	}
+
+	@keyframes move {
+		0%{transform:rotate(0deg);top:100%;left:0%}
+		5%{transform:rotate(0deg);top:100%;left:0%}
+		10%{transform:rotate(0deg);top:90%;left:0%}
+		15%{transform:rotate(0deg);top:85%;left:0%}
+		20%{transform:rotate(0deg);top:80%;left:0%}
+		25%{transform:rotate(0deg);top:75%;left:0%}
+		30%{transform:rotate(0deg);top:70%;left:0%}
+		35%{transform:rotate(0deg);top:65%;left:0%}
+		40%{transform:rotate(0deg);top:60%;left:0%}
+		45%{transform:rotate(0deg);top:55%;left:0%}
+		50%{transform:rotate(0deg);top:50%;left:0%}
+		55%{transform:rotate(0deg);top:45%;left:0%}
+		60%{transform:rotate(0deg);top:40%;left:0%}
+		65%{transform:rotate(0deg);top:35%;left:0%}
+		70%{transform:rotate(0deg);top:30%;left:0%}
+		75%{transform:rotate(60deg);top:25%;left:0%}
+		80%{transform:rotate(120deg);top:20%;left:0%}
+		85%{transform:rotate(180deg);top:0%;left:0%}	
+		86%{transform:rotate(240deg);top:0%;left:0%}	
+		87%{transform:rotate(300deg);top:0%;left:0%}	
+		88%{transform:rotate(360deg);top:0%;left:0%}	
+		89%{transform:rotate(0deg);top:0%;left:0%}	
+		90%{transform:rotate(0deg);top:-50%;left:0%}	
+		93%{transform:rotate(0deg);top:-80%;left:0%}
+		94%{transform:rotate(0deg);top:-100%;left:100%}	
+}

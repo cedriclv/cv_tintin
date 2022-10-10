@@ -1,0 +1,69 @@
+@import url('http://fonts.cdnfonts.com/css/tintin');
+@font-face {
+    font-family: 'tintin_talking';
+    src: url(./font/tintin_talking.ttf);
+
+}
+:root {
+
+
+    --primary-color: #b04f23; /*costume*/
+    --secondary-color: #e8f0de; /*fond vert*/
+    --secondary-color-icon: #e5c39b; /*manteau*/
+    --shadow-color: #aca29e;
+    --dark-color: #1d0d06;
+    --light-color: #faf1ec;
+    --background-color: #e8f0de;
+
+    --case-color-1: #659b5f;
+    --case-color-2:#a2c8f1;
+    --case-color-3: #efd3a5;
+
+    --font-family: 'Tintin', sans-serif;    
+    --font-family-talking: 'tintin_talking', sans-serif;
+    --font-family-sans-serif: arial,sans-serif; /* pas plus de 2 fonts dans la page*/
+
+    --font-size-s: 0.7rem;
+    --font-size-m: 1rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.5rem;
+
+    --width-vignettes-jobs: clamp(360px, 100%, 900px);
+    --width-cartoon : 100px;
+    --width-tintin-vignettes:70%;
+    --height-tintin-vignettes:160px;
+    --min-height-bubble:150px;
+    --width-tintin-jumelle:150px;
+    --width-bad-boys:380px;
+    --height-bad-boys:120px;
+    
+
+    --offset-tintin:-50px;
+
+    --border: 1px;
+    --border-vignettes:4px;
+
+
+    --aside-vignettes:10%;
+
+    --radius-photo: 50%;
+    --radius-border: 4px;
+
+    --spacing: 8px;
+    --spacing-x2: calc(var(--spacing) * 2);
+    --spacing-x3: calc(var(--spacing) * 3);
+    --spacing-x4: calc(var(--spacing) * 4);
+    --space-interline: 1.3rem;
+
+    --aspect-square: 1;
+    --aspect-rectangle: 2;
+    --border-circle: 50%;
+
+    --transition-time: 0.3s;
+    --transition-time-objects:2s;
+}
+
+* {
+    box-sizing: border-box;
+}

@@ -1,0 +1,105 @@
+<!-- <?php include 'skillsData.php' ?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="skills.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><img src="img/id-tintin.png" alt="logo"></div>
+
+        <div class="links" id="links">
+
+            <a href="index.html">Accueil</a>
+            <a href="education.html">Formations</a>
+            <a href="work_exp.html">Experiences professionelles</a>
+            <a href="skills.html">Competences</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <a class="burger" href="#links">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </a>
+    </nav>
+
+    <!-- <?php include_once("navbar.php"); ?> -->
+    <h1 class="page_title">Skills</h1>
+    <div class="hardAndSoftContainer">
+        <div class="skillsContainer softsSkillsContainer">
+            <div class="skillsComicsBox">
+                <div class="softSkillsTitleANDskillsPicture">
+                    <h1 class="skillsTitle">SOFT SKILLS</h2>
+                        <img class="imgLogoSoft" src="./img/id-tintin.png" alt="space ship" srcset="">
+                </div>
+                <div class="skillsText">
+                    <div class=" bubble skillsItems skillsItems1 ">
+                        <h3>Autonomie</h3>
+                        <div class="skillsDetails">De par mes aventures palnetaires, je suis capable de me debrouiller
+                            seul dans toutes les situations</div>
+                    </div>
+                    <div class=" bubble skillsItems skillsItems1 ">
+                        <h3>Self-learner</h3>
+                        <div class="skillsDetails">J'ai du faire face a de nombreux challenges et tout apprendre en un
+                            temps record !</div>
+                    </div>
+                    <div class=" bubble skillsItems skillsItems1 ">
+                        <h3>Curieux</h3>
+                        <div class="skillsDetails">Je suis reporter, c'est bien sur ma premiere qualité !</div>
+                    </div>
+
+                    <!-- <?php foreach ($softSkillsDetails as $skillsTitle => $skillsDescription) { ?>
+                        <div class=" bubble skillsItems skillsItems1 ">
+                            <h3><?= $skillsTitle  ?></h3>
+                            <div class="skillsDetails"><?= $skillsDescription  ?></div>
+                        </div>
+                    <?php } ?> -->
+                </div>
+            </div>
+        </div>
+        <div class="skillsContainer hardSkillsContainer">
+            <div class="skillsComicsBox">
+                <div class="hardSkillsTitleANDskillsPicture">
+                    <h1 class="skillsTitle">HARD SKILLS</h2>
+                        <img class="imgLogoHard" src="./img/spaceShipFlat.png" alt="space ship" srcset="">
+                </div>
+                <div class="skillsText">
+                    <div class=" bubble skillsItems skillsItems1 ">
+                        <h3>HTML/CSS</h3>
+                        <div class="skillsDetails">J'ai developpé un super CV, montrant ce qu'on a pu realiser en equipe
+                            sur HTML et CSS</div>
+                    </div>
+                    <div class=" bubble skillsItems skillsItems1 ">
+                        <h3>Node JS</h3>
+                        <div class="skillsDetails"> A mes heures perdues, je programme en Node JS </div>
+                    </div>
+                    <div class=" bubble skillsItems skillsItems1 ">
+                        <h3>PHP Symfony</h3>
+                        <div class="skillsDetails">J'ai eu une super formation specialisée en PHP qui m'a permis de
+                            faire le tour du PHP </div>
+                    </div>
+
+                    <!-- <?php foreach ($hardSkillsDetails as $skillsTitle => $skillsDescription) { ?>
+                        <div class=" bubble skillsItems skillsItems1 ">
+                            <h3><?= $skillsTitle  ?></h3>
+                            <div class="skillsDetails"><?= $skillsDescription  ?></div>
+                        </div>
+                    <?php } ?> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
